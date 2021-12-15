@@ -12,7 +12,7 @@ const EntryProvider = ({ children }) => {
 const useEntry = () => {
     const context = useContext(EntryContext)
     if(context === undefined) {
-        throw new Error('Error')
+        throw new Error('Error something something')
     }
     return context
 }

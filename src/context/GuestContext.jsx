@@ -3,10 +3,10 @@ import { useContext, useState, createContext } from "react";
 const GuestContext = createContext();
 
 const GuestProvider = ({ children }) => {
-    const [guest, setGuest] = useState({});
+    const [guest, setGuest] = useState('');
 
     return (
-        <GuestContext.provider value={{user, setUser}}>{children}</GuestContext.provider>
+        <GuestContext.Provider value={{guest, setGuest}}>{children}</GuestContext.Provider>
     )
 }
 
