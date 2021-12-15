@@ -1,3 +1,14 @@
+import Guestform from "./components/Guestform";
+import Header from "./views/Header/Header";
+import { EntryProvider } from "./context/EntryContext";
+import { GuestProvider } from "./context/GuestContext";
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+  <div>
+  
+      <Guestform/>
+      <Header/>
+      
+      </div>
+  )
 }
