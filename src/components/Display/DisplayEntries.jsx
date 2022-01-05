@@ -8,12 +8,12 @@ export default function DisplayEntries() {
         <div className='outer-container'>
             {entry.map((item => {
                     return (
-                        <p className='container' key={item.message}>
-                            <div className='row'>{item.user}</div>
-                            <div className='row'>{item.message}</div>
+                        <div className='container' key={item.message}>
+                            <p className='row'>{item.user}</p>
+                            <p className='row'>{item.message}</p>
 
 
-                        </p>
+                        </div>
                     )
                 }))}
                 

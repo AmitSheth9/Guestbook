@@ -1,14 +1,14 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 
-export const authContext = createContext();
+const authContext = createContext();
 
-export function ProvideAuth({ children }) {
-    const [user, setUser] = useState(null);
+const ProvideAuth = ({ children }) => {
+    const [user, setUser] = useState('');
 
     const login = (username, password) => {
         const loginSuccesful = username === process.env.AUTH_USERNAME && password === process.env.AUTH_PASSWORD;
 
-        if(loginSuccesful) setUser({ username });
+        if(loginSuccesful) setUser( username );
         return loginSuccesful;
     };
     const logout = (callback) => {
@@ -26,10 +26,9 @@ const useAuth = () => {
 
     if (context === undefined) {
         throw new Error(
-            'Error'
-        )
+            'Error')
     }
     return context;
 }
 
-export {useAuth}
+export { ProvideAuth, useAuth }

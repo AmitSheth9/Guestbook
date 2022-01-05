@@ -1,11 +1,12 @@
 import React from 'react'
 import { useGuest } from '../../context/GuestContext'
+import { useAuth } from '../../context/AuthContext.jsx';
 
 export default function Header() {
-    const {guest} = useGuest();
+    const { user } = useAuth();
     return (
         <div>
-         {guest ? <h1>  Welcome {guest} </h1>  : <h3>Welcome Guest</h3>    } 
+         {user ? <h1>  Welcome {user} </h1>  : <h3>Welcome Guest</h3>    } 
         </div>
     )
 }
