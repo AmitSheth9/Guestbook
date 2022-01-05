@@ -1,0 +1,17 @@
+.container {
+    border: 5px solid blue;
+}
+
+.outer-container {
+    color: red;
+}
+.row {
+    font-size: 40px;
+}
+div {
+    font-size: 30px;
+}
+p {
+    border: 3px solid blue;
+    
+}

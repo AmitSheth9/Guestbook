@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should display Home on screen 1`] = `
+<div>
+  <div>
+    <div>
+      <h3>
+        Welcome Guest
+      </h3>
+    </div>
+    <div>
+      Sign The Guestbook!
+      <form>
+        <div>
+          <label>
+            Guest Name
+            <input
+              value=""
+            />
+          </label>
+          <br />
+           
+        </div>
+        <label>
+          Guest Entry
+          <input
+            value=""
+          />
+        </label>
+        <button
+          type="submit"
+        >
+          Sign
+        </button>
+        <div />
+      </form>
+      <div />
+    </div>
+    <div
+      class="outer-container"
+    />
+  </div>
+</div>
+`;
